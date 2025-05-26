@@ -14,4 +14,4 @@
     enable = true
 
   [plugins.inputs]
-    enable = false
+    enable = "[[context]] == 'deploy-preview'"
