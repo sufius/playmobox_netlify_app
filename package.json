@@ -36,6 +36,6 @@
     "karma-jasmine": "~4.0.2",
     "karma-jasmine-html-reporter": "~1.7.0",
     "netlify-plugin-cypress": "~2.2.1",
-    "typescript": "~5.8.3"
+    "typescript": "~5.5.0"
   }
 }
