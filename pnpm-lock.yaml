@@ -82,7 +82,7 @@ importers:
         specifier: ~2.2.1
         version: 2.2.1(encoding@0.1.13)
       typescript:
-        specifier: ~5.5.4
+        specifier: ~5.5.0
         version: 5.5.4
 
 packages:
