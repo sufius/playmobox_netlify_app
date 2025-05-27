@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
     selector: 'app-root',
@@ -7,14 +6,4 @@ import { FormBuilder, FormGroup } from '@angular/forms';
     standalone: false
 })
 export class AppComponent {
-  formGroup: FormGroup;
-
-  constructor(private fb: FormBuilder) {
-    this.formGroup = this.fb.group({
-      companyName: [''],
-      contactName: [''],
-      phoneNumber: [''],
-      url: ['']
-    });
-  }
 }

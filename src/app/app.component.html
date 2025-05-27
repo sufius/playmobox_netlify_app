@@ -1,23 +1,8 @@
 <div id="content">
-  <form [formGroup]="formGroup">
-    <mat-form-field appearance="outline" class="full-width">
-      <mat-label>Company Name</mat-label>
-      <input matInput formControlName="companyName" />
-    </mat-form-field>
-
-    <mat-form-field appearance="outline" class="full-width">
-      <mat-label>Contact Name</mat-label>
-      <input matInput formControlName="contactName" />
-    </mat-form-field>
-
-    <mat-form-field appearance="outline" class="full-width">
-      <mat-label>Phone Number</mat-label>
-      <input matInput formControlName="phoneNumber" type="tel" />
-    </mat-form-field>
-
-    <mat-form-field appearance="outline" class="full-width">
-      <mat-label>Website URL</mat-label>
-      <input matInput formControlName="url" type="url" />
-    </mat-form-field>
-  </form>
+    <h1>Meine App</h1>
+    <nav>
+      <a routerLink="/">Benutzerbereich</a> |
+      <a routerLink="/admin">Adminbereich</a>
+    </nav>
+    <router-outlet></router-outlet>
 </div>
