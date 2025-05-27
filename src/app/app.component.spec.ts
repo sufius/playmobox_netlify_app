@@ -22,7 +22,7 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-quickstart'`, () => {
+  it(`should have as title 'playmobox'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app.formGroup).instanceOf(FormGroup);
