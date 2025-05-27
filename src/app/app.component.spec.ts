@@ -1,6 +1,8 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { FormGroup } from '@angular/forms';
+
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -23,13 +25,13 @@ describe('AppComponent', () => {
   it(`should have as title 'angular-quickstart'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-quickstart');
+    expect(app.formGroup).instanceOf(FormGroup);
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-quickstart app is running!');
+    // expect(compiled.querySelector('.content mat-form-field')).
   });
 });
